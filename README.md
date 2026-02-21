@@ -1,10 +1,10 @@
-# 🚀 Bootcamp POO - Desafio DIO
+# Bootcamp POO - Desafio DIO
 
-Projeto Java que demonstra os **4 pilares da Programação Orientada a Objetos** usando o contexto de um Bootcamp.
+Projeto Java que demonstra os **4 pilares da Programação Orientada a Objetos** usando o contexto de um Bootcamp. Projeto desenvolvido como parte do desafio da Formação Java Developer na plataforma DIO (Digital Innovation One).
 
 ---
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 src/
@@ -20,37 +20,35 @@ src/
 
 ---
 
-## 🧩 Os 4 Pilares na Prática
+## Os 4 Pilares na Prática
 
-### 🔺 ABSTRAÇÃO
+### ABSTRAÇÃO
 - `Conteudo` é uma classe abstrata que modela o conceito genérico de "conteúdo" de um bootcamp.
 - `Bootcamp` e `Dev` abstraem entidades do mundo real com seus atributos essenciais.
 
-### 🔺 ENCAPSULAMENTO
+### ENCAPSULAMENTO
 - Todos os atributos são `private`, acessados apenas via `getters` e `setters`.
 - A lógica de negócio (ex: `progredir()`, `inscreverBootcamp()`) fica dentro da própria classe.
 
-### 🔺 HERANÇA
+### HERANÇA
 - `Curso` **herda** de `Conteudo` e adiciona `cargaHoraria`.
 - `Mentoria` **herda** de `Conteudo` e adiciona `data`.
 - Ambas reutilizam `titulo`, `descricao` e `XP_PADRAO` da classe pai.
 
-### 🔺 POLIMORFISMO
+### POLIMORFISMO
 - O método `calcularTotalXp()` é sobrescrito em `Curso` e `Mentoria` com lógicas diferentes.
 - Em `Dev.calcularTotalXp()`, chamamos `Conteudo::calcularTotalXp` sem saber se é Curso ou Mentoria — o Java resolve em tempo de execução!
 
 ---
 
-## 💡 Cálculo de XP
+## Como executar
 
-| Tipo      | Fórmula                          | Exemplo             |
-|-----------|----------------------------------|---------------------|
-| Curso     | `XP_PADRAO (10) × cargaHoraria`  | 8h → 80 XP          |
-| Mentoria  | `XP_PADRAO (10) + 20`            | sempre 30 XP        |
+### Clone o repositório
 
----
-
-## ▶️ Como executar
+```bash
+git clone https://github.com/Keila-Moloni-Stefani/bootcamp-poo.git
+cd bootcamp-poo
+```
 
 ### No IntelliJ IDEA
 1. Abra o projeto (`File > Open` → selecione a pasta `bootcamp-poo`)
@@ -67,7 +65,7 @@ java -cp out br.com.dio.desafio.Main
 
 ---
 
-## 📤 Saída esperada
+## Saída esperada
 
 ```
 ✅ Ana inscrita no Bootcamp: Bootcamp Java Developer
@@ -102,4 +100,18 @@ java -cp out br.com.dio.desafio.Main
 
 ---
 
-Feito com ♥ para o desafio DIO | POO com Java
+## Licença
+
+Este projeto foi desenvolvido para fins educacionais como parte do desafio da Formação Java Developer na plataforma DIO.
+
+---
+
+## Desenvolvedor
+
+Desenvolvido por Keila Moloni Stefani
+LinkedIn: [linkedin](https://www.linkedin.com/in/keila-moloni-stefani/)
+
+
+---
+
+⭐ Se este projeto foi útil para você, considere dar uma estrela!
